@@ -2,7 +2,7 @@ package kz.eldos.eSchoolGreetgo.model;
 
 import java.util.Objects;
 
-public class Class {
+public class Group {
     /*
      * Fields
      */
@@ -16,9 +16,9 @@ public class Class {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Class)) return false;
-        Class aClass = (Class) o;
-        return Objects.equals(getId(), aClass.getId());
+        if (!(o instanceof Group)) return false;
+        Group group = (Group) o;
+        return Objects.equals(getId(), group.getId());
     }
 
     @Override

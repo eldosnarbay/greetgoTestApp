@@ -16,7 +16,7 @@ public class Pupil {
 
     private Date birthdate;
 
-    private Integer classId;
+    private Integer groupId;
 
     /*
      * Entity basics
@@ -42,7 +42,7 @@ public class Pupil {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", birthdate=" + birthdate +
-                ", classId=" + classId +
+                ", groupId=" + groupId +
                 '}';
     }
 
@@ -61,6 +61,6 @@ public class Pupil {
     public Date getBirthdate() { return birthdate; }
     public void setBirthdate(Date birthdate) { this.birthdate = birthdate; }
 
-    public Integer getClassId() { return classId; }
-    public void setClassId(Integer classId) { this.classId = classId; }
+    public Integer getGroupId() { return groupId; }
+    public void setGroupId(Integer groupId) { this.groupId = groupId; }
 }
