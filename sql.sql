@@ -16,4 +16,4 @@ create table pupils(
 	groupId int references groups(id)
 );
 
-insert into pupils(fname, lname, birthdate, groupId) values ('John', 'Doe', '2008-08-08', 1);
+insert into pupils(fname, lname, birthdate, group_id) values ('John', 'Doe', '2008-08-08', 1);

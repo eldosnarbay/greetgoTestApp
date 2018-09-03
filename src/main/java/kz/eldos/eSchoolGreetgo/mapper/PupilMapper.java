@@ -23,13 +23,15 @@ public interface PupilMapper {
     })
     Pupil findById(Integer id);
 
-    @Insert("INSERT INTO pupils(fname, lname, birthdate, group_id) VALUES(#{firstName}, #{lastName}, #{birthdate}, #{groupId})")
+    @Insert("INSERT INTO pupils(fname, lname, birthdate, group_id) " +
+            "VALUES(#{firstName}, #{lastName}, #{birthdate}, #{groupId})")
+    @Options(useGeneratedKeys = true, keyProperty = "id", keyColumn = "id")
     void insert(Pupil pupil);
 
     @Update("UPDATE pupils SET fname = #{firstName}, lname = #{lastName}, birthdate = #{birthdate}, " +
             "group_id = #{groupId} WHERE id = #{id}")
     void update(Pupil pupil);
 
-    @Delete("DELETE FROM pupils WHEREid = #{id}")
-    Integer delete();
+    @Delete("DELETE FROM pupils WHERE id = #{id}")
+    Integer delete(Integer id);
 }
