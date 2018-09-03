@@ -15,7 +15,7 @@ public class GroupController {
 
     private final GroupMapper groupMapper;
 
-    @Autowiredan
+    @Autowired
     public GroupController(GroupMapper groupMapper) {
         this.groupMapper = groupMapper;
     }
